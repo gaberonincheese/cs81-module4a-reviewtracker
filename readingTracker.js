@@ -1,3 +1,8 @@
+/*This is an object called readingLog that
+contains three properties: day, book, and minutes. 
+Each property is an array that holds the corresponding 
+values for each day of the week. 
+*/
 // Weekly reading log
 const readingLog = [
   { day: "Monday", book: "Dune", minutes: 30 },
@@ -7,6 +12,9 @@ const readingLog = [
   { day: "Friday", book: "1984", minutes: 15 }
 ];
 
+/* This function takes three parameters in accordance with the readingLog object,
+then creates a new entry object with those parameters and pushes it to the readingLog array.
+*/ 
 // Adds a new reading entry to the log
 function addReadBook(day, book, minutes) {
   const newEntry = { day, book, minutes };
