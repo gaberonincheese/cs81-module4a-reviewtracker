@@ -28,12 +28,12 @@ function addReadBook(day, book, minutes) {
  * Finally, it returns the total minutes read for the week.
  */
 // Returns total minutes spent reading all week
-function totalReadingMinutes(log) { // Function that takes the given reading log
-  let total = 0; // Variable that keeps track of total minutes read
-  for (let entry of log) { // For loop that creates a new entry for each item in log
-    total += entry.minutes; // Grabs property minutes from each entry and adds it to the total variable
+function totalReadingMinutes(log) { // Function that takes the given reading log.
+  let total = 0; // Variable that keeps track of total minutes read.
+  for (let entry of log) { // For loop that creates a new entry for each item in log.
+    total += entry.minutes; // Grabs property minutes from each entry and adds it to the total variable.
   }
-  return total; //returns total minutes
+  return total; // Returns total minutes.
 }
 
 /**
@@ -95,3 +95,11 @@ readingLog.pop(); // Removes the last entry
 readingLog.push("Saturday", "Lapvona", 45);
 readingLog.push("Sunday", "Lapvona", 30);
 printDailySummary(readingLog);
+
+/*
+* Suggestion for Improvement
+* There were multiple instances where I felt that the names for the variables could have been more descriptive.
+* The function mostReadBook was a struggle for me to parse for this reason. There was a lot of repetition of the word "book", which made the logic
+* difficult to follow at times. As someone who was taught the importance of variable names, I likely would have renamed many of the variables
+* to ensure each one's purpose was clearer.
+*/
