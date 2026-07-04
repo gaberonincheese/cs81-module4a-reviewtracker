@@ -1,3 +1,5 @@
+//GitHub link: https://github.com/gaberonincheese/cs81-module4a-reviewtracker
+
 /**  
 * This is an object called readingLog that contains three properties: day, book, and minutes. 
 * Each property is an array that holds the corresponding values for each day of the week. 
