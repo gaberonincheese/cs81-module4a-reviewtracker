@@ -43,8 +43,8 @@ function totalReadingMinutes(log) { // Function that takes the given reading log
  * Finally, it loops through each book in the bookCounts object and updates maxBook and maxCount if the count for the current book is greater than maxCount, and returns maxBook.
  */
 // Returns the book read most frequently
-function mostReadBook(log) { // Function that takes the given reading log
-  // Makes an object called bookCounts that will keep track of how many times each book has been read
+function mostReadBook(log) { // Function that takes the given reading log.
+  // Makes an object called bookCounts that will keep track of how many times each book has been read.
   const bookCounts = {}; 
   // Loops through each entry in the log
   for (let entry of log) {
